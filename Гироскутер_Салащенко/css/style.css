@@ -1,0 +1,466 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Calibri;
+    font-weight: 300;
+    font-size: 20pt;
+}
+
+h1 {
+    font-size: 34pt;
+    font-weight: 300;
+    margin: 0;
+}
+
+.container {
+    max-width: 70%;
+    margin: auto;
+}
+
+.order {
+    font-size: 12pt;
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 12px 0;
+}
+
+.header-shadow { box-shadow: 0 3px 2px rgba(0, 0, 0, 0.1); }
+
+.button {
+    border: 0;
+    padding: 6px 13px;
+    border-radius: 10px;
+}
+
+.navbar > h1 {
+    font-weight: 700;
+    margin: 13px 0;
+}
+
+.order-btn {
+    background-color: #FFA019;
+    color: #fff;
+    font-weight: bold;
+    font-size: 13pt;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+}
+
+nav h1 {
+    font-size: 30pt;
+    margin-top: 10px;
+}
+
+.menu {
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+    margin-left: auto;
+    font-size: 14pt;
+}
+
+.menu-item {
+    margin-left: 35px;
+    text-decoration: none;
+    color: #000;
+    font-weight: 400;
+}
+
+.main-section {
+    position: relative;
+    display: flex;
+    background-image: url("../img/scooter-3620869_960_720.jpg");
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    height: 600px;
+}
+
+.main-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
+
+.main-screen {
+    text-align: center;
+    margin: auto;
+    z-index: 1;
+}
+
+.main-screen > h1 { font-size: 56px; }
+
+.main-screen > p {
+    margin-top: 18px;
+    max-width: 850px;
+    line-height: 30px;
+}
+
+.catalog-btn {
+    background-color: #fff;
+    font-weight: bold;
+    margin-top: 18px;
+    font-size: 12pt;
+    padding: 10px 25px;
+}
+
+.advantages-section {
+    margin-top: 140px;
+}
+
+.advantages-header {
+    display: flex;
+    align-content: center;
+}
+
+.scroll-arrows {
+    margin: auto;
+    margin-right: 0;
+}
+
+.advantages-list {
+    display: flex;
+    margin-top: 71px;
+    list-style: none;
+}
+
+.advantages-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 20pt;
+    margin: auto;
+}
+
+.advantages-item > span { margin-top: 31px; }
+
+.about-section { margin-top: 175px; }
+
+.about-section > p { margin-top: 76px; }
+
+.mailing-section {
+    background: #FFA019;
+    margin-top: 90px;
+    height: 94px;
+}
+
+.mailing-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+    max-height: 100%;
+    font-weight: 600;
+    font-size: 14pt;
+    padding: 25px 0;
+}
+
+.mailing-content > p {
+    max-width: 375px;
+    font-size: 18pt;
+}
+
+.mailing-input {
+    border: 1px solid #fff;
+    background: rgba(0, 0, 0, 0);
+    color: #fff;
+    padding: 10px 20px;
+    margin-left: auto;
+    max-width: 200px;
+    margin-right: 38px;
+}
+
+.mailing-input::placeholder {
+   color: #fff;
+   opacity: 1;
+}
+
+.mailing-button {
+    font-weight: bold;
+    padding: 10px 50px;
+    border-radius: 0;
+}
+
+.features-section { margin-top: 110px; }
+
+.fetures-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-bottom: 90px;
+}
+
+.features-item { list-style: none; }
+
+.catalog-section { 
+    margin-top: 120px;
+    background-color: #fbfbfb;
+    font-size: 16pt;
+    padding: 80px 0;
+}
+
+.catalog-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.catalog-header ul {
+    display: flex;
+    list-style: none;
+}
+
+.catalog-header li {
+    margin-left: 38px;
+}
+
+.active-category {
+    background-color: #FFA019;
+    color: #fff;
+    border-radius: 15px;
+    padding: 1px 10px;
+}
+
+.product-card {
+    position: relative;
+    background-color: #fff;
+    padding: 30px 20px;
+    max-width: 280px;
+    margin-top: 80px;
+    box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.1);
+    flex-shrink: 0;
+    margin-right: min(25px);
+}
+
+.product-card:last-child {margin-right: 0;}
+
+.product-category {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    background-color: #FFA019;
+    color: #fff;
+    font-size: 14pt;
+    padding: 5px 10px;
+    border-radius: 0 15px 15px 0;
+}
+
+.product-list {
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    overflow-x: auto;
+    padding: 10px;
+}
+
+.product-card img {
+    max-width: 100%;
+    margin-top: 30px;
+}
+
+.product-card p { margin-bottom: 20px; }
+
+.product-price {
+    font-size: 20pt;
+    font-weight: bold;
+}
+
+.consultants-section { 
+    margin-top: 120px;
+    background-color: #fbfbfb;
+    font-size: 16pt;
+    padding: 80px 0;
+}
+
+.consultants-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.consultants-header ul {
+    display: flex;
+    list-style: none;
+}
+
+.consultants-list {
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    overflow-x: auto;
+    padding: 10px;
+}
+
+.consultants-header li {
+    margin-left: 38px;
+}
+
+.consultants-card {
+    position: relative;
+    background-color: #fff;
+    padding: 30px 20px;
+    max-width: px;
+    margin-top: 100px;
+    box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.1);
+    flex-shrink: 0;
+    margin-right: min(25px);
+    display: flex;
+    justify-content: space-between;
+    height: 400px;
+    width: 550px; 
+}
+
+.consultants-card:last-child {margin-right: 0;}
+
+.consultants-email {
+    position: absolute;
+    top: 330px;
+    right: 130px;
+    background-color: #FFA019;
+    color: #fff;
+    font-size: 18pt;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 15px 15px 15px 15px;
+}
+
+.consultants-card img {
+    width: 270px;
+    height: 340px;
+}
+
+.consultants-card p { margin-bottom: 20px; }
+
+.consultants-name {
+    float:right;
+    font-size: 20pt;
+    font-weight: bold;
+}
+
+.consultants-post {
+    float:right;
+}
+
+.usefulInformation-section { 
+    margin-top: 120px;
+    background-color: #fbfbfb;
+    font-size: 16pt;
+    padding: 80px 0;
+}
+
+.usefulInformation-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.usefulInformation-header ul {
+    display: flex;
+    list-style: none;
+}
+
+.usefulInformation-header li {
+    margin-left: 38px;
+}
+
+.usefulInformation-list {
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    overflow-x: auto;
+    padding: 10px;
+}
+
+.usefulInformation-card {
+    position: relative;
+    padding: 30px 20px;
+    max-width: px;
+    margin-top: 100px;
+    flex-shrink: 0;
+    margin-right: min(25px);
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    height: 450px;
+    width: 450px; 
+}
+
+.BG1{
+    background-image: url("../img/Content/Полезная информация/1.jpg");
+}
+
+.BG2{
+    background-image: url("../img/Content/Полезная информация/2.jpg");
+}
+
+.BG3{
+    background-image: url("../img/Content/Полезная информация/3.jpg");
+}
+
+.BG4{
+    background-image: url("../img/Content/Полезная информация/4.jpg");
+}
+
+.usefulInformation-card:last-child {margin-right: 0;}
+
+.usefulInformation-card p { margin-bottom: 20px; }
+
+.usefulInformation-name {
+    float: right;
+    margin: auto;
+    color: #ffffff;
+    font-size: 25pt;
+    font-weight: bold;
+}
+
+footer {
+    padding: 20px 10%;
+    flex-direction: column-reverse;
+}
+
+.online_store {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 12px;
+    line-height: 15px;
+    width: auto;
+}
+
+.Copyright {
+    padding-top: 20px;
+}
+
+.different {
+    flex-wrap: wrap;
+}
+
+.MYGIRO {
+    padding-top: 10px;
+    padding-right: 35px;
+}
+
+.MYGIRO > h1 {
+    font-size: 12px;
+}
+
+.MYGIRO > p {
+    font-size: 15px;
+    padding-top: 5px;
+    line-height: 15px;
+}
